@@ -9,7 +9,7 @@ module.exports.createUser = async (req, res) => {
     await userData.create(newUser)
     res.status(200).json({ user: newUser }); 
   } catch (error) {
-    res.status(400).json({error:"400"});
+    res.status(400).json({error:"No se ha podido crear al usuario"});
   }
 }
 
@@ -19,9 +19,7 @@ module.exports.searchUser = async (req, res) => {
   try {
     const searchById = await userData.find({ _id: req.params.id })
     res.json({ searchById })
-  } catch (error) {
-    res.send({ Mensaje: 'Lo siento ha ocurrido un error de ${error}.' })
-  }
+  } catch (error) {res.status(400).json({ Mensaje: 'Lo siento ha ocurrido un error de ${error}.' })}
 }
 
 // Login user.
@@ -43,12 +41,14 @@ module.exports.changeName = async (req, res) => {
   try {
     await userData.findOneAndUpdate({ _id: req.params.id }, { name: req.body.name })
     res.send('El nombre se ha cambiado perfectamente por: ' + req.body.name)
-  } catch (error) { res.send({ mensaje: 'Lo siento ha ocurrido un error de ${error}.' }) }
+  } catch (error) { res.status(400).json({ mensaje: 'Lo siento ha ocurrido un error de ${error}.' }) }
 }
 
 // Eliminar user.
 
 module.exports.deleteUser = async (req, res) => {
-  const eliminate = await userData.findOneAndDelete({ _id: req.params.id })
-  res.json({ data: eliminate.name })
+  try{
+    const eliminate = await userData.findOneAndDelete({ _id: req.params.id })
+    res.json({ data: eliminate.name })
+  }catch(error){ res.status(400).json({error:"el usario no se ha podido eliminar"})}
 }

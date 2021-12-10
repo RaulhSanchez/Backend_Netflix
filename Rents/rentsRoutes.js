@@ -2,9 +2,9 @@ const router = require('express').Router() // Middleware te sirve para conectar 
 const controller = require('./rentsController')
 const validationJwt = require('../middleware')
 
-router.post ('/', controller.createRent)
-router.get ('/', controller.searchRent)
+router.post ('/add', controller.createRent)
+router.get ('/ger', controller.searchRent)
 router.get ('/all', controller.searchAllRents)
-router.delete ('/', controller.deleteRent)
+router.delete ('/delete', controller.deleteRent)
 
 module.exports = router;
