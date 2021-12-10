@@ -1,4 +1,4 @@
-const hash = require('./functions')
+const hash = require('./userFunctions')
 const { Schema, model } = require('mongoose');
 
 

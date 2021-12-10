@@ -1,5 +1,5 @@
-const userData = require('./model.js')
-const method = require('./functions')
+const userData = require('./userModel.js')
+const method = require('./userFunctions')
 
 // Creamos user.
 

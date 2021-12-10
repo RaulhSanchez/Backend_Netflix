@@ -2,9 +2,9 @@ const express = require('express')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv').config()
 const app = express();
-const moviesRoutes = require('./Movies/routes')
-const userRoutes = require('./Users/routes')
-const rentRoutes = require('./Rents/routes')
+const moviesRoutes = require('./Movies/movieRoutes')
+const userRoutes = require('./Users/userRoutes')
+const rentRoutes = require('./Rents/rentsRoutes')
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");

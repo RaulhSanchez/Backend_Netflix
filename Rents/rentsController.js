@@ -1,5 +1,5 @@
-const router = require('../Rents/routes.js')
-const rentData = require('./model.js')
+const router = require('./rentsRoutes.js')
+const rentData = require('./rentsModel.js')
 
 module.exports.createRent = async (req, res) => {
     try {

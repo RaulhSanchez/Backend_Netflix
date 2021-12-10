@@ -1,4 +1,4 @@
-const dataMovie = require('./model.js')
+const dataMovie = require('./movieModel.js')
 
 // Búsqueda de película.
 

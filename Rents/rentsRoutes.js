@@ -1,5 +1,5 @@
 const router = require('express').Router() // Middleware te sirve para conectar las rutas desde app central.
-const controller = require('./controller')
+const controller = require('./rentsController')
 const validationJwt = require('../middleware')
 
 router.post ('/', controller.createRent)

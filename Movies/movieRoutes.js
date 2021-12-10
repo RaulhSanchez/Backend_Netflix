@@ -1,5 +1,5 @@
 const router = require('express').Router() 
-const controller = require('./controller')
+const controller = require('./movieController')
 
 const validationJwt = require('../middleware')
 

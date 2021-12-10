@@ -1,5 +1,5 @@
 const router = require('express').Router() //middwalre te sirve para conectar las rutas desde app central
-const controller = require('./controller')
+const controller = require('./userController')
 // const validacionJwt=require('../middelware')
 
 
