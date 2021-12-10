@@ -14,8 +14,8 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
-    "mongodb": "^4.1.4",
-    "mongoose": "^6.0.12"
+    "mongodb": "^4.2.1",
+    "mongoose": "^6.1.1"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
