@@ -1,5 +1,12 @@
 # Backend Netflix
 
+## Tecnologías
+
+<img width="60px" height="60" src="https://github.com/RaulhSanchez/RaulhSanchez/blob/main/GIT.png"></img>
+<img width="60px" height="60" src="https://github.com/RaulhSanchez/RaulhSanchez/blob/main/JS.png"></img>
+<img width="60px" height="60" src="https://github.com/RaulhSanchez/RaulhSanchez/blob/main/MONGO.png"></img>
+<img width="60px" height="60" src="https://github.com/RaulhSanchez/RaulhSanchez/blob/main/MONGOOSE.png"></img>
+
 
 ## Descripción
 
